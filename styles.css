@@ -1,0 +1,177 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+   --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+    font-family: "League Spartan";
+    text-align: center;
+    font-size: 1,06rem;
+}
+
+    .container {
+        background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+        background-position: top, bottom;   
+        background-repeat: no-repeat, no-repeat;
+        margin-top: -1.9rem;
+    }
+
+    .call {
+        color: var(--Very-Dark-Magenta);
+        font-weight: bolder;
+        font-size: 3rem;
+        padding: 2rem 2rem 0.3rem 2rem;
+    }
+
+    .text {
+        font-size: 1.6rem;
+        color: var(--Dark-Grayish-Magenta);
+        font-weight: 500;
+        padding-bottom: 1.5rem;
+    }
+
+    .rates--box1, .rates--box2, .rates--box3 {
+        display: block;
+        width: 400px;
+        background-color: var(--Light-Grayish-Magenta);
+        margin: 1rem auto;
+        border-radius: 0.5rem;
+    }
+
+    .rates--text {
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: var(--Very-Dark-Magenta);
+        font-weight: bold;
+    }
+
+    .rates--stars {
+        padding-top: 1rem;
+    }
+
+    .social--box1, .social--box2, .social--box3 {
+        position: relative;
+        background-color: var(--Very-Dark-Magenta);
+        margin: 1.5rem;
+        margin-top: 2rem;
+        border-radius: 0.5rem;
+        text-align: left;
+        color: var(--White);
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .social--icon {
+        width: 50px;
+        border-radius: 2rem;
+        display: inline-block;
+    }
+
+    .social--name {
+        position: absolute;
+        top: 13%;
+        display: inline-block;
+        font-weight: bold;
+        padding-left: 1rem; 
+    }
+
+    .social--class {
+        display: inline-block;
+        color: var(--Soft-Pink);
+        padding-bottom: 2rem;
+        padding-left: 1rem;    
+    }
+
+    .social--text {
+        line-height: 1.4;
+    }
+
+    @media(min-width:1300px) {
+
+        .container {
+            width: auto;
+            position: relative;
+            padding: 4rem 5em;
+            padding-left: 8rem;
+            background: none;
+            background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+            background-position: top, bottom;
+            background-repeat: no-repeat, no-repeat;
+        }
+        .call {
+            padding-left: 0;
+            text-align: left;
+            width: 300px;
+        }
+
+        .text {
+            width: 40rem;
+            text-align: left;
+        }
+
+        .rates--box {
+            display: inline-flex;
+            text-align: right;
+            width: 450px;
+            padding: 1rem 2rem;
+        }
+
+        .rates--text {
+            display: inline-flex;
+        }
+
+        .rates--box1 {
+            position: absolute;
+            top: 20%;
+            left: 45%;
+            width: 450px;
+            text-align: left;
+            display: inline-flex;
+            padding: 0.5rem 2rem;
+        }
+
+        .rates--box2 {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            width: 450px;
+            text-align: left;
+            display: inline-flex;
+            padding: 0.5rem 2rem;
+        }
+
+        .rates--box3 {
+            position: absolute;
+            top: 60%;
+            left: 55%;
+            width: 450px;
+            text-align: left;
+            display: inline-flex;
+            padding: 0.5rem 2rem;
+        }
+
+        .social--box1 {
+            position: absolute;
+            top: 75%;
+            left: 6.75%;
+            width: 300px;
+            display: inline-block;
+        }
+
+        .social--box2 {
+            position: absolute;
+            top: 80%;
+            left: 35.5%;
+            width: 300px;
+            display: inline-block;
+        }
+
+        .social--box3 {
+            position: absolute;
+            top: 85%;
+            left: 64.5%;
+            width: 300px;
+            display: inline-block;
+        }
+    }
